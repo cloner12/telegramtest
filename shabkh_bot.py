@@ -1,6 +1,7 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
-
+from keep_alive import keep_alive
+keep_alive()
 TOKEN = '6934034446:AAEJygjf0ktL1YJ1gaG5TcgXT0368Z54KWo'
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
